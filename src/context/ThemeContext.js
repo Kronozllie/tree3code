@@ -18,7 +18,7 @@ export const ThemeContextProvider = ({ children }) => {
         ...(mode === 'light'
           ? {
               background: {
-                default: 'blue',
+                default: '#f5f5f5',
                 paper: '#ffffff',
               },
               text: {

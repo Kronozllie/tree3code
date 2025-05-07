@@ -1,3 +1,4 @@
+import './i18n'; // importa la configuración antes de montar tu app
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

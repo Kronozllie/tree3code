@@ -3,6 +3,7 @@ import { Box, Container, Typography, Stack, IconButton, Divider, Link } from '@m
 import { Facebook, Instagram, LinkedIn, WhatsApp, Email, LocationOn } from '@mui/icons-material';
 import fiverrLogo from '../assets/fiverr.png';
 import logoWhite from '../assets/logo_white.png';
+import { useTranslation } from 'react-i18next';
 
 const XIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#ffffff">
@@ -11,6 +12,7 @@ const XIcon = () => (
 );
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <Box
       component="footer"
@@ -83,7 +85,7 @@ const Footer = () => {
                 color: '#ffffff'
               }}
             >
-              Contacto
+              {t('footer.title1')}
             </Typography>
             
             <Stack spacing={1.5}>
@@ -104,7 +106,7 @@ const Footer = () => {
               <Box display="flex" alignItems="flex-start">
                 <LocationOn sx={{ mr: 1.5, color: '#4285F4', mt: 0.5 }} />
                 <Typography variant="body1">
-                  Trabajando a nivel global 🌎
+                  {t('footer.global')} 🌎
                 </Typography>
               </Box>
             </Stack>
@@ -123,11 +125,11 @@ const Footer = () => {
                 color: '#ffffff'
               }}
             >
-              Síguenos
+              {t('footer.title2')}
             </Typography>
             
             <Typography variant="body2" mb={2}>
-              Conéctate con nosotros en redes sociales
+            {t('footer.message1')}
             </Typography>
             
             <Stack direction="row" spacing={1}>
@@ -193,7 +195,7 @@ const Footer = () => {
             </Stack>
 
             <Typography variant="body2" mt={2} mb={2}>
-              También estamos en:
+              {t('footer.message2')}
             </Typography>
 
             <Stack direction="row" spacing={1}>
@@ -220,7 +222,7 @@ const Footer = () => {
         {/* Derechos reservados y política */}
         <Box display="flex" flexDirection={{ xs: 'column', sm: 'row' }} justifyContent="space-between" alignItems="center">
           <Typography variant="body2" color="#f5f5f5">
-            © {new Date().getFullYear()} tree3code. Todos los derechos reservados.
+            © {new Date().getFullYear()} tree3code. {t('footer.copyright')}
           </Typography>
           
           {/* <Stack direction="row" spacing={2} mt={{ xs: 2, sm: 0 }}>

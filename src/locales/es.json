@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "slide1Title": "Bienvenido a",
+    "slide1Subtitle": "\"Programando el futuro, hoy.\"",
+    "slide2Title": "CREANDO EXPERIENCIAS DIGITALES",
+    "slide2Subtitle": "La mejor opción para tu nuevo proyecto web.",
+    "buttonAbout": "Conócenos",
+    "buttonContact": "Contáctanos"
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "description1": "En tree3code creemos que la tecnología debe sentirse cercana. Creamos soluciones web con propósito, pensando en personas reales y necesidades reales. Ya sea una tienda en línea, una landing page o un sistema interno, lo diseñamos a tu medida, con detalle, claridad y visión a futuro.",
+    "subtitle": "¿Qué nos diferencia?",
+    "description2": "Escuchamos antes de programar. Nos enfocamos en comprender a fondo cada proyecto para ofrecer resultados funcionales, atractivos y escalables. Aquí no hay soluciones genéricas: todo se crea con intención, estrategia y mucho cuidado.",
+    "description3": "",
+    "years": "Años de",
+    "years1": "experiencia"
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Ofrecemos soluciones adaptadas a tu empresa, siempre con tecnología de punta y enfoque en resultados.",
+    "items": [
+      {
+        "title": "Desarrollo Web",
+        "description": "Creamos sitios web modernos, rápidos y a la medida de tus necesidades."
+      },
+      {
+        "title": "Sistemas a Medida",
+        "description": "Diseñamos e implementamos sistemas que automatizan y mejoran tus procesos."
+      },
+      {
+        "title": "Consultoría Tecnológica",
+        "description": "Te ayudamos a tomar decisiones estratégicas con base en tecnología."
+      },
+      {
+        "title": "Optimización de Rendimiento",
+        "description": "Aceleramos tu sitio y reducimos tiempos de carga para una mejor experiencia del usuario."
+      },
+      {
+        "title": "Integración con APIs",
+        "description": "Conectamos tus sistemas con servicios externos como pasarelas de pago, CRMs o plataformas de terceros."
+      },
+      {
+        "title": "Mantenimiento y Soporte",
+        "description": "Brindamos seguimiento continuo para que tu sitio esté siempre actualizado, seguro y funcionando correctamente."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "description": "Algunos proyectos destacados que hemos desarrollado recientemente.",
+    "category": "Proyecto",
+    "projects": {
+      "reserves": {
+        "title": "Presencia profesional para abogados",
+        "description": "",
+        "long": "Diseño de una landing page limpia, elegante y con enfoque en generar confianza, ideal para captar nuevos clientes."
+      },
+      "inventory": {
+        "title": "Tienda saludable en línea",
+        "description": "",
+        "long": "Diseño de una landing atractiva que integra carrito de compras y sistema de pedidos para emprendedores del mercado local."
+      },
+      "ecommerce": {
+        "title": "Control total de tus finanzas empresariales",
+        "description": "",
+        "long": "Diseño de una plataforma interna con autenticación, reportes y visualización de transacciones para una gestión eficiente."
+      },
+      "crm": {
+        "title": "Atención médica digitalizada",
+        "description": "",
+        "long": "Diseño de una landing clara y profesional, con información clave, horarios y formulario de citas online."
+      },
+      "education": {
+        "title": "Estilo y comodidad en un solo clic",
+        "description": "",
+        "long": "Diseño de una página promocional con catálogo visual de productos, ideal para aumentar ventas online."
+      },
+      "finance": {
+        "title": "",
+        "description": "",
+        "long": ""
+      }
+    },
+      "modal": {
+      "descriptionTitle": "Descripción del Proyecto",
+      "share": "Compartir",
+      "details": "Detalles del Proyecto",
+      "client": "Cliente",
+      "clientUnknown": "Cliente no especificado",
+      "website": "Website",
+      "visitSite": "Visitar sitio",
+      "notAvailable": "No disponible",
+      "skills": "Habilidades",
+      "unknownAuthor": "Autor desconocido",
+      "close": "Cerrar",
+      "social": {
+        "facebook": "Compartir en Facebook",
+        "twitter": "Compartir en Twitter",
+        "linkedin": "Compartir en LinkedIn",
+        "github": "Ver en GitHub"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "description": "Cada proyecto es único. Cuéntanos el tuyo y te damos una propuesta personalizada.",
+    "success": "¡Mensaje enviado con éxito!",
+    "error": "Error al enviar el mensaje. Por favor, inténtalo de nuevo.",
+    "reqname": "El nombre es obligatorio",
+    "reqemail": "El correo electrónico es obligatorio",
+    "emailerror": "Correo electrónico inválido",
+    "reqsubject": "El asunto es obligatorio",
+    "reqmessage": "El mensaje es obligatorio",
+    "labelname": "Nombre",
+    "labelemail": "Correo electrónico",
+    "labelsubject": "Asunto",
+    "labelmessage": "Mensaje",
+    "submit": "Enviar"
+  },
+  "footer": {
+    "title1": "Contacto",
+    "title2": "Síguenos",
+    "message1": "Conéctate con nosotros en redes sociales",
+    "message2": "También estamos en:",
+    "global": "Trabajando a nivel global",
+    "copyright": "Todos los derechos reservados."
+  }
+} 

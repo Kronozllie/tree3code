@@ -1,43 +1,23 @@
 import React from 'react';
 import { Box, Container, Typography, Grid, useTheme } from '@mui/material';
 import { Code, Build, SupportAgent, Speed, Link, Security } from '@mui/icons-material';
+import { useTranslation } from 'react-i18next';
 import MotionBox from './MotionBox';
 
-const services = [
-  {
-    title: 'Desarrollo Web',
-    description: 'Creamos sitios web modernos, rápidos y a la medida de tus necesidades.',
-    icon: <Code sx={{ fontSize: 50, color: '#60ce89' }} />,
-  },
-  {
-    title: 'Sistemas a Medida',
-    description: 'Diseñamos e implementamos sistemas que automatizan y mejoran tus procesos.',
-    icon: <Build sx={{ fontSize: 50, color: '#32c4e3' }} />,
-  },
-  {
-    title: 'Consultoría Tecnológica',
-    description: 'Te ayudamos a tomar decisiones estratégicas con base en tecnología.',
-    icon: <SupportAgent sx={{ fontSize: 50, color: '#e39e32' }} />,
-  },
-  {
-    title: 'Optimización de Rendimiento',
-    description: 'Aceleramos tu sitio y reducimos tiempos de carga para una mejor experiencia del usuario.',
-    icon: <Speed sx={{ fontSize: 50, color: '#60ce89' }} />,
-  },
-  {
-    title: 'Integración con APIs',
-    description: 'Conectamos tus sistemas con servicios externos como pasarelas de pago, CRMs o plataformas de terceros.',
-    icon: <Link sx={{ fontSize: 50, color: '#32c4e3' }} />,
-  },
-  {
-    title: 'Mantenimiento y Soporte',
-    description: 'Brindamos seguimiento continuo para que tu sitio esté siempre actualizado, seguro y funcionando correctamente.',
-    icon: <Security sx={{ fontSize: 50, color: '#e39e32' }} />,
-  },
+const iconList = [
+  <Code sx={{ fontSize: 50, color: '#60ce89' }} />,
+  <Build sx={{ fontSize: 50, color: '#32c4e3' }} />,
+  <SupportAgent sx={{ fontSize: 50, color: '#e39e32' }} />,
+  <Speed sx={{ fontSize: 50, color: '#60ce89' }} />,
+  <Link sx={{ fontSize: 50, color: '#32c4e3' }} />,
+  <Security sx={{ fontSize: 50, color: '#e39e32' }} />,
 ];
 
 const Services = () => {
   const theme = useTheme();
+  const { t } = useTranslation();
+
+  const services = t('services.items', { returnObjects: true });
 
   return (
     <Box
@@ -61,7 +41,7 @@ const Services = () => {
             fontWeight="bold"
             textAlign="center"
           >
-            Servicios
+            {t('services.title')}
           </Typography>
           <Typography
             variant="body1"
@@ -69,7 +49,7 @@ const Services = () => {
             textAlign="center"
             sx={{ maxWidth: 600, mx: 'auto', opacity: 0.7 }}
           >
-            Ofrecemos soluciones adaptadas a tu empresa, siempre con tecnología de punta y enfoque en resultados.
+            {t('services.subtitle')}
           </Typography>
         </MotionBox>
 
@@ -94,7 +74,7 @@ const Services = () => {
                   transition={{ duration: 0.6, delay }}
                   viewport={{ once: true }}
                 >
-                  {service.icon}
+                  {iconList[index]}
                   <Typography
                     variant="subtitle1"
                     sx={{ mt: 2, textTransform: 'uppercase', fontWeight: 900, fontSize: 15 }}

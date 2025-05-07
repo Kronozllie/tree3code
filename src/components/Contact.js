@@ -11,6 +11,7 @@ import {
   useTheme,
 } from '@mui/material';
 import MotionBox from './MotionBox';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -20,20 +21,22 @@ const Contact = () => {
     mensaje: '',
   });
 
+  const { t } = useTranslation();
+
   const [status, setStatus] = useState(null);
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
   const validate = () => {
     const newErrors = {};
-    if (!formData.nombre.trim()) newErrors.nombre = 'Name is required';
+    if (!formData.nombre.trim()) newErrors.nombre = t('contact.reqname');
     if (!formData.email.trim()) {
-      newErrors.email = 'Email is required';
+      newErrors.email = t('contact.reqemail');
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      newErrors.email = 'Invalid email';
+      newErrors.email = t('contact.emailerror');
     }
-    if (!formData.asunto.trim()) newErrors.asunto = 'Subject is required';
-    if (!formData.mensaje.trim()) newErrors.mensaje = 'Message is required';
+    if (!formData.asunto.trim()) newErrors.asunto = t('contact.reqsubject');
+    if (!formData.mensaje.trim()) newErrors.mensaje = t('contact.reqmessage');
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -51,7 +54,7 @@ const Contact = () => {
 
     setLoading(true);
 
-    const res = await fetch('https://formspree.io/f/xqaqkwyn', {
+    const res = await fetch('https://formspree.io/f/xvgaknkp', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
@@ -88,7 +91,7 @@ const Contact = () => {
             fontWeight="bold"
             textAlign="center"
           >
-            Contáctanos
+            {t('contact.title')}
           </Typography>
           <Typography
             variant="body1"
@@ -96,7 +99,7 @@ const Contact = () => {
             textAlign="center"
             sx={{ mx: 'auto', opacity: 0.7 }}
           >
-            Cada proyecto es único. Cuéntanos el tuyo y te damos una propuesta personalizada.
+            {t('contact.description')}
           </Typography>
         </MotionBox>
 
@@ -129,12 +132,12 @@ const Contact = () => {
               >
                 {status === 'success' && (
                   <Alert severity="success" sx={{ mb: 3 }}>
-                    Message sent successfully!
+                    {t('contact.success')}
                   </Alert>
                 )}
                 {status === 'error' && (
                   <Alert severity="error" sx={{ mb: 3 }}>
-                    Error sending message. Please try again.
+                    {t('contact.error')}
                   </Alert>
                 )}
 
@@ -145,7 +148,7 @@ const Contact = () => {
                       <Grid size={{ xs: 12, md: 12 }}>
                         <TextField
                           fullWidth
-                          label="Name"
+                          label={t('contact.labelname')}
                           variant="outlined"
                           name="nombre"
                           value={formData.nombre}
@@ -166,7 +169,7 @@ const Contact = () => {
                       <Grid size={{ xs: 12, md: 12 }}>
                         <TextField
                           fullWidth
-                          label="Email"
+                          label={t('contact.labelemail')}
                           variant="outlined"
                           name="email"
                           type="email"
@@ -191,7 +194,7 @@ const Contact = () => {
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
-                      label="Subject"
+                      label={t('contact.labelsubject')}
                       variant="outlined"
                       name="asunto"
                       value={formData.asunto}
@@ -213,7 +216,7 @@ const Contact = () => {
                   <Grid item xs={12}>
                     <TextField
                       fullWidth
-                      label="Message"
+                      label={t('contact.labelmessage')}
                       variant="outlined"
                       multiline
                       rows={6}
@@ -259,7 +262,7 @@ const Contact = () => {
                     {loading ? (
                       <CircularProgress size={24} color="inherit" />
                     ) : (
-                      'Submit'
+                      t('contact.submit')
                     )}
                   </Button>
                 </Grid>

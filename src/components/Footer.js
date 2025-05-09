@@ -199,9 +199,21 @@ const Footer = () => {
             </Typography>
 
             <Stack direction="row" spacing={1}>
-
-              <IconButton 
+              
+              {/* Directo al perfil */}
+              {/*<IconButton 
                 href="https://es.fiverr.com/tree3code" 
+                target="_blank" 
+                sx={{ 
+                  backgroundColor: '#1cbf73',
+                  '&:hover': { backgroundColor: '#279b65' },
+                  width: 40,
+                  height: 40
+                }}
+              >*/}
+              {/* Directo al servicio */}
+              <IconButton 
+                href="http://www.fiverr.com/s/ljNKQ9a" 
                 target="_blank" 
                 sx={{ 
                   backgroundColor: '#1cbf73',

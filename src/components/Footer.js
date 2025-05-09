@@ -98,8 +98,8 @@ const Footer = () => {
               
               <Box display="flex" alignItems="center">
                 <Email sx={{ mr: 1.5, color: '#EA4335' }} />
-                <Link href="mailto:tree3code@gmail.com" color="inherit" underline="hover">
-                  tree3code@gmail.com
+                <Link href="mailto:contact.tree3code@gmail.com" color="inherit" underline="hover">
+                  contact.tree3code@gmail.com
                 </Link>
               </Box>
               

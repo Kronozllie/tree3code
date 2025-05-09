@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography, Stack, IconButton, Divider, Link } from '@mui/material';
-import { Facebook, Instagram, LinkedIn, WhatsApp, Email, LocationOn } from '@mui/icons-material';
+import { Facebook, Instagram, WhatsApp, Email, LocationOn } from '@mui/icons-material';
 import fiverrLogo from '../assets/fiverr.png';
 import logoWhite from '../assets/logo_white.png';
 import { useTranslation } from 'react-i18next';

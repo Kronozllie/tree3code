@@ -91,15 +91,15 @@ const Footer = () => {
             <Stack spacing={1.5}>
               <Box display="flex" alignItems="center">
                 <WhatsApp sx={{ mr: 1.5, color: '#25D366' }} />
-                <Link href="tel:8001234567" color="inherit" underline="hover">
-                  +1 (800) 123-4567
+                <Link href="https://wa.me/5216694196131" color="inherit" underline="hover">
+                  +52 1 669 419 6131
                 </Link>
               </Box>
               
               <Box display="flex" alignItems="center">
                 <Email sx={{ mr: 1.5, color: '#EA4335' }} />
-                <Link href="mailto:contacto@tree3code.com" color="inherit" underline="hover">
-                  contacto@tree3code.com
+                <Link href="mailto:contact.tree3code@gmail.com" color="inherit" underline="hover">
+                  tree3code@gmail.com
                 </Link>
               </Box>
               
@@ -134,7 +134,7 @@ const Footer = () => {
             
             <Stack direction="row" spacing={1}>
               <IconButton 
-                href="#" 
+                href="https://www.facebook.com/tree3code" 
                 target="_blank" 
                 sx={{ 
                   backgroundColor: '#4267B2',
@@ -145,7 +145,7 @@ const Footer = () => {
               </IconButton>
               
               <IconButton 
-                href="#" 
+                href="https://x.com/tree3code" 
                 target="_blank" 
                 sx={{ 
                   backgroundColor: '#000000',
@@ -159,7 +159,7 @@ const Footer = () => {
               </IconButton>
               
               <IconButton 
-                href="#" 
+                href="https://www.instagram.com/tree3code" 
                 target="_blank" 
                 sx={{ 
                   background: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D)',
@@ -169,7 +169,7 @@ const Footer = () => {
                 <Instagram sx={{ color: '#fff' }} />
               </IconButton>
               
-              <IconButton 
+              {/*<IconButton 
                 href="#" 
                 target="_blank" 
                 sx={{ 
@@ -178,10 +178,10 @@ const Footer = () => {
                 }}
               >
                 <LinkedIn sx={{ color: '#fff' }} />
-              </IconButton>
+              </IconButton>*/}
               
               <IconButton 
-                href="#" 
+                href="https://wa.me/5216694196131" 
                 target="_blank" 
                 sx={{ 
                   backgroundColor: '#25D366',
@@ -201,7 +201,7 @@ const Footer = () => {
             <Stack direction="row" spacing={1}>
 
               <IconButton 
-                href="#" 
+                href="https://es.fiverr.com/tree3code" 
                 target="_blank" 
                 sx={{ 
                   backgroundColor: '#1cbf73',

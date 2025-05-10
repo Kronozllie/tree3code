@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography, Stack, IconButton, Divider, Link } from '@mui/material';
-import { Facebook, Instagram, WhatsApp, Email, LocationOn } from '@mui/icons-material';
+import { Facebook, Instagram, LinkedIn , WhatsApp, Email, LocationOn } from '@mui/icons-material';
 import fiverrLogo from '../assets/fiverr.png';
 import logoWhite from '../assets/logo_white.png';
 import { useTranslation } from 'react-i18next';
@@ -169,8 +169,8 @@ const Footer = () => {
                 <Instagram sx={{ color: '#fff' }} />
               </IconButton>
               
-              {/*<IconButton 
-                href="#" 
+              <IconButton 
+                href="https://www.linkedin.com/company/tree3code" 
                 target="_blank" 
                 sx={{ 
                   backgroundColor: '#0077B5',
@@ -178,7 +178,7 @@ const Footer = () => {
                 }}
               >
                 <LinkedIn sx={{ color: '#fff' }} />
-              </IconButton>*/}
+              </IconButton>
               
               <IconButton 
                 href="https://wa.me/5216694196131" 

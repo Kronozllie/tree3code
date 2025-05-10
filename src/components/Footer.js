@@ -201,7 +201,7 @@ const Footer = () => {
             <Stack direction="row" spacing={1}>
               
               {/* Directo al perfil */}
-              {/*<IconButton 
+              <IconButton 
                 href="https://es.fiverr.com/tree3code" 
                 target="_blank" 
                 sx={{ 
@@ -210,9 +210,9 @@ const Footer = () => {
                   width: 40,
                   height: 40
                 }}
-              >*/}
+              >
               {/* Directo al servicio */}
-              <IconButton 
+              {/*<IconButton 
                 href="http://www.fiverr.com/s/ljNKQ9a" 
                 target="_blank" 
                 sx={{ 
@@ -221,7 +221,7 @@ const Footer = () => {
                   width: 40,
                   height: 40
                 }}
-              >
+              >*/}
                 <Box component="img" src={fiverrLogo} sx={{ width: 20, height: 20, filter: 'brightness(0) invert(1)',}}/>
               </IconButton>
 

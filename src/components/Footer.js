@@ -1,7 +1,8 @@
 import React from 'react';
 import { Box, Container, Typography, Stack, IconButton, Divider, Link } from '@mui/material';
-import { Facebook, Instagram, LinkedIn , WhatsApp, Email, LocationOn } from '@mui/icons-material';
+import { Facebook, Instagram, LinkedIn, WhatsApp, Email, LocationOn } from '@mui/icons-material';
 import fiverrLogo from '../assets/fiverr.png';
+import linktrLogo from '../assets/linktree-50x50.png';
 import logoWhite from '../assets/logo_white.png';
 import { useTranslation } from 'react-i18next';
 
@@ -211,6 +212,7 @@ const Footer = () => {
                   height: 40
                 }}
               >
+
               {/* Directo al servicio */}
               {/*<IconButton 
                 href="http://www.fiverr.com/s/ljNKQ9a" 
@@ -225,7 +227,34 @@ const Footer = () => {
                 <Box component="img" src={fiverrLogo} sx={{ width: 20, height: 20, filter: 'brightness(0) invert(1)',}}/>
               </IconButton>
 
+              <IconButton 
+                href="https://linktr.ee/tree3code" 
+                target="_blank" 
+                sx={{ 
+                  backgroundColor: '#3bd559',
+                  '&:hover': { backgroundColor: '#279b65' },
+                  width: 40,
+                  height: 40
+                }}
+              >
+
+              {/* Directo al servicio */}
+              {/*<IconButton 
+                href="http://www.fiverr.com/s/ljNKQ9a" 
+                target="_blank" 
+                sx={{ 
+                  backgroundColor: '#1cbf73',
+                  '&:hover': { backgroundColor: '#279b65' },
+                  width: 40,
+                  height: 40
+                }}
+              >*/}
+                <Box component="img" src={linktrLogo} sx={{ width: 20, height: 20, filter: 'brightness(0) invert(1)',}}/>
+              </IconButton>
+
             </Stack>
+
+
           </Box>
         </Box>
 
